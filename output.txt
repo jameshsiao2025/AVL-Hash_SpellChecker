@@ -1,0 +1,81 @@
+[==========] Running 41 tests from 4 test suites.
+[----------] Global test environment set-up.
+[----------] 13 tests from AVLSet_SanityCheckTests
+[ RUN      ] AVLSet_SanityCheckTests.inheritFromSet
+[       OK ] AVLSet_SanityCheckTests.inheritFromSet (33 ms)
+[ RUN      ] AVLSet_SanityCheckTests.canCreateAndDestroy
+[       OK ] AVLSet_SanityCheckTests.canCreateAndDestroy (4 ms)
+[ RUN      ] AVLSet_SanityCheckTests.heightOfEmptyIsNegativeOne
+[       OK ] AVLSet_SanityCheckTests.heightOfEmptyIsNegativeOne (15 ms)
+[ RUN      ] AVLSet_SanityCheckTests.canCopyConstructToCompatibleType
+[       OK ] AVLSet_SanityCheckTests.canCopyConstructToCompatibleType (6 ms)
+[ RUN      ] AVLSet_SanityCheckTests.canMoveConstructToCompatibleType
+[       OK ] AVLSet_SanityCheckTests.canMoveConstructToCompatibleType (8 ms)
+[ RUN      ] AVLSet_SanityCheckTests.canAssignToCompatibleType
+[       OK ] AVLSet_SanityCheckTests.canAssignToCompatibleType (13 ms)
+[ RUN      ] AVLSet_SanityCheckTests.canMoveAssignToCompatibleType
+[       OK ] AVLSet_SanityCheckTests.canMoveAssignToCompatibleType (14 ms)
+[ RUN      ] AVLSet_SanityCheckTests.isImplemented
+/home/ics46/projects/project4/gtest/AVLSet_SanityCheckTests.cpp:101: Failure
+Value of: s1.isImplemented()
+  Actual: false
+Expected: true
+/home/ics46/projects/project4/gtest/AVLSet_SanityCheckTests.cpp:104: Failure
+Value of: s2.isImplemented()
+  Actual: false
+Expected: true
+[  FAILED  ] AVLSet_SanityCheckTests.isImplemented (144 ms)
+[ RUN      ] AVLSet_SanityCheckTests.containsElementsAfterAdding
+/home/ics46/projects/project4/gtest/AVLSet_SanityCheckTests.cpp:115: Failure
+Value of: s1.contains(11)
+  Actual: false
+Expected: true
+/home/ics46/projects/project4/gtest/AVLSet_SanityCheckTests.cpp:116: Failure
+Value of: s1.contains(1)
+  Actual: false
+Expected: true
+/home/ics46/projects/project4/gtest/AVLSet_SanityCheckTests.cpp:117: Failure
+Value of: s1.contains(5)
+  Actual: false
+Expected: true
+[  FAILED  ] AVLSet_SanityCheckTests.containsElementsAfterAdding (21 ms)
+[ RUN      ] AVLSet_SanityCheckTests.doesNotContainElementsNotAdded
+[       OK ] AVLSet_SanityCheckTests.doesNotContainElementsNotAdded (8 ms)
+[ RUN      ] AVLSet_SanityCheckTests.sizeIsNumberOfElementsAdded
+/home/ics46/projects/project4/gtest/AVLSet_SanityCheckTests.cpp:141: Failure
+Expected equality of these values:
+  3
+  s1.size()
+    Which is: 0
+[  FAILED  ] AVLSet_SanityCheckTests.sizeIsNumberOfElementsAdded (60 ms)
+[ RUN      ] AVLSet_SanityCheckTests.heightDependsOnBalancing
+/home/ics46/projects/project4/gtest/AVLSet_SanityCheckTests.cpp:157: Failure
+Expected equality of these values:
+  1
+  balanced.height()
+    Which is: -1
+/home/ics46/projects/project4/gtest/AVLSet_SanityCheckTests.cpp:158: Failure
+Expected equality of these values:
+  2
+  notBalanced.height()
+    Which is: -1
+[  FAILED  ] AVLSet_SanityCheckTests.heightDependsOnBalancing (31 ms)
+[ RUN      ] AVLSet_SanityCheckTests.canProvideTraversals
+/home/ics46/projects/project4/gtest/AVLSet_SanityCheckTests.cpp:183: Failure
+Expected equality of these values:
+  5
+  preElements.size()
+    Which is: 0
+[  FAILED  ] AVLSet_SanityCheckTests.canProvideTraversals (86 ms)
+[----------] 13 tests from AVLSet_SanityCheckTests (535 ms total)
+
+[----------] 12 tests from HashSet_SanityCheckTests
+[ RUN      ] HashSet_SanityCheckTests.inheritFromSet
+[       OK ] HashSet_SanityCheckTests.inheritFromSet (66 ms)
+[ RUN      ] HashSet_SanityCheckTests.canCreateAndDestroy
+[       OK ] HashSet_SanityCheckTests.canCreateAndDestroy (5 ms)
+[ RUN      ] HashSet_SanityCheckTests.canCopyConstructToSameType
+[       OK ] HashSet_SanityCheckTests.canCopyConstructToSameType (14 ms)
+[ RUN      ] HashSet_SanityCheckTests.canCopyConstructToCompatibleType
+[       OK ] HashSet_SanityCheckTests.canCopyConstructToCompatibleType (17 ms)
+[ RUN      ] HashSet_SanityCheckTests.canMoveConstructToCompatibleType
